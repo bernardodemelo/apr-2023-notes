@@ -1,0 +1,151 @@
+/* Basic Styling */
+
+/*.ironhack-main-div{
+    width: 100%; 
+    height: 720px;
+}*/
+
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+}*/
+
+/* Border */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    border: 3px solid black; // => border-width, border-style, border-color 
+}
+*/
+
+/*Border Bottom Property */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    border-bottom: 3px solid black;
+}
+*/
+
+/*Border Radius - Rounds the Corners */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    border-radius: 50%;
+}
+*/
+
+/* Padding Property */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    padding: 10px 10px 10px 10px; //padding-top, padding-right, padding-bottom, padding-left
+}
+*/
+
+/* Padding Top and Bottom Example */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    padding: 10px 0; // padding goes in pairs: (top and bottom), (left and right) 
+}
+*/
+
+/* Padding Left */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    padding-left: 10px;
+}
+*/
+
+/* Margin */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    margin: 10px 10px 10px 10px; //margin-top, margin-right, margin-bottom, margin-left
+}*/
+
+/* Margin Top and Bottom */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    margin: 10px 0; // margin goes in pairs: (top and bottom), (left and right) 
+}*/
+
+/* Margin Top */
+/*
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center;
+    width: 370px; 
+    height: 30px;
+
+    margin-top: 10px;
+}*/
+
+/* Position Relative */
+.ironhack-main-div{
+    width: 100%; 
+    height: 720px;
+    position: relative
+}
+
+/* Position Absolute */
+#ironhack-box-model{
+    background-color: blue; 
+    color: white; 
+    text-align: center; 
+
+    width: 370px;
+    height: 30px;
+
+    position: absolute;
+    top: 50%; /* 50% bottom of the ironhack-main-div*/
+    left: calc(50% - 185px);  /* calc help us 
+    to calculate between different units */
+}
