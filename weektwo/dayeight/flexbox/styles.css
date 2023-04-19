@@ -1,0 +1,104 @@
+/* Basic Styling */
+/*
+.first-div{
+    height: 150px; 
+    width: 150px;
+    background-color: red;
+}
+
+.second-div{
+    height: 150px; 
+    width: 150px;
+    background-color: gold;
+}
+
+.third-div{
+    height: 150px; 
+    width: 150px;
+    background-color: tan;
+}
+*/
+
+/* Flex and Flex-Direction */
+/* 
+.main-section{
+    width: 100%;
+    height: 1000px; 
+    display: flex; /* Activates Flex */
+    /* flex-direction: row; */ 
+    
+    /* 
+    Flex-direction Values: row, column, 
+    column-reverse, row-reverse
+    */
+/*
+}
+*/
+
+/* Justify Content - Arranges Elements Horizontally */
+/*
+.main-section{
+    width: 100%;
+    height: 1000px; 
+    display: flex; 
+    justify-content: center;
+
+    /* 
+    justify-content Values: flex-start, flex-end, 
+    center, space-between, space-around, space-evenly
+    */
+/*
+} ´
+*/
+
+/* Align Items - Arranges Elements Vertically */
+/*
+.main-section{
+    width: 100%;
+    height: 1000px; 
+    display: flex; 
+    align-items: center;
+
+    /* 
+    align-items Values: flex-start, flex-end, 
+    center, space-between, space-around, space-evenly
+    */
+/*
+} 
+*/
+
+/* Flex Wrap - In order not to stretch each element width
+to fit horizontally, flex carries some of them to a new line  */
+/*
+.main-section{
+    width: 100%;
+    height: 1000px; 
+    display: flex; 
+    flex-wrap: wrap;
+
+    /* 
+    flex-wrap Values: wrap, nowrap, wrap-reverse, 
+    */
+/*
+} 
+*/
+
+/* Align Content - Arranges multiple lines vertically */
+
+/*
+.main-section{
+    width: 100%;
+    height: 1000px; 
+    display: flex; 
+    align-content: center;
+
+    /* 
+    align-conent Values: flex-start, flex-end, 
+    center, space-between, space-around, space-evenly
+    */
+/*
+} 
+*/
+
+/* IMPORTANT: In order to demo flex-wrap and 
+align-content, uncomment the HTML. */

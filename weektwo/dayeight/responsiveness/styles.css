@@ -1,0 +1,93 @@
+/* Media Query - allows you to create different 
+layouts depending on the widht of the device. 
+*/
+
+/* Mobile S Widths */
+/*
+@media (min-width: 320px) and (max-width: 374px){
+    .responsive-div{
+        background-color: red;
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+
+/* Mobile M Widths */
+/*
+@media (min-width: 375px) and (max-width: 424px){
+    .responsive-div{
+        background-color: green;
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+/* Mobile L Widths */
+/*
+@media (min-width: 425px) and (max-width: 767px){
+    .responsive-div{
+        background-color: blue; 
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+/* Tablet Widths */
+/*
+@media (min-width: 768px) and (max-width: 1023px){
+    .responsive-div{
+        background-color: purple; 
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+/* Tablet Widths */
+/*
+@media (min-width: 768px) and (max-width: 1023px){
+    .responsive-div{
+        background-color: purple; 
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+/* Laptop Widths */
+/*
+@media (min-width: 1024px) and (max-width: 1339px){
+    .responsive-div{
+        background-color: gold; 
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+/* Laptop L Widths */
+/*
+@media (min-width: 1440px) and (max-width: 2559px){
+    .responsive-div{
+        background-color: magenta; 
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+/* 4K Widths */
+/*
+@media (min-width: 2560px) {
+    .responsive-div{
+        background-color: gray; 
+        height: 100px; 
+        width: 100px;
+    }
+}
+*/
+
+/* Tips on creating a good, responsive Web Design */
+
+/* => Adjust font-size according to each device */
+/* => Adjust flex-direction to column from devices tablet 
+and smaller ones */
+/* => Adjust Margins and Paddings */
+/* => Always use percentages as width values when we can. */
