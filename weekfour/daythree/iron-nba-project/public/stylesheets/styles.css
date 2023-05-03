@@ -1,0 +1,8 @@
+.container{
+    margin-top: 10%;
+}
+
+.card img {
+    height: 200px; 
+    object-fit: cover; 
+}

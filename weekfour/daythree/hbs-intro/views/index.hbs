@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+<body>
+  <h1>Hello {{name}}!</h1>
+  <p>Welcome to the {{bootcamp}}!!</p>
+</body>
+</html>-->
+
+<!-- IF -->
+
+<!--
+<h1>Hello {{name}}!</h1>
+{{#if lastName}}
+{{#if address}}
+    <h2>{{address}}</h2>
+{{else}}
+  <h2>No address for us :(</h2>
+{{/if}}
+{{/if}} -->
+
+<!-- FOR LOOP -->
+
+<!--
+<ul>
+  {{#each cities}}
+    <li>{{this}}</li>
+  {{else}}
+    <p>No cities yet!</p>
+  {{/each}}
+</ul>-->
+
+<!-- DISPLAYING THE INDEX --> 
+
+<!--
+<ul>
+  {{#each cities}}
+    <li>{{@index}}: {{this}}</li>
+  {{/each}}
+</ul>-->
+
+<!-- DISPLAYING FIRST AND LAST INDEX -->
+<!--
+<ul>
+  {{#each cities}}
+    {{#if @first}}
+      <li><b>{{this}}</b></li>
+    {{else if @last}}
+      <li><i>{{this}}</i></li>
+    {{else}}
+      <li>{{this}}</li>
+    {{/if}}
+  {{/each}}
+</ul>-->
+
+<!-- WITH -->
+<h1>Hello {{name}} {{lastName}}!</h1>
+{{#with address}} <!-- Enters inside address object -->
+  <p>{{street}}, {{number}}</p>
+{{/with}}
+
+
+
