@@ -1,0 +1,44 @@
+<h1>{{book.title}}</h1>
+<br>
+<p>Written by: {{book.author}}</p>
+<p>Summary: {{book.description}}</p>
+<p>Rating: {{book.rating}}</p>
+<br>
+<a href="/books/{{book._id}}/edit">Edit Book</a>
+<form action="/books/{{book._id}}/delete" method="post">
+    <button type="submit">
+        Delete Book
+    </button>
+</form>
+<br>
+<!-- Review Section -->
+<h4>Leave a Review!</h4>
+
+<!-- Form to Create a Review -->
+<form action="/review/create/{{book._id}}" method="post">
+    <select name="author">
+        {{#each users}}
+            <option value="{{_id}}">{{username}}</option>
+        {{/each}}
+    </select>
+    <label for="content">Content</label>
+    <textarea name="content" id="content" cols="30" rows="5"></textarea>
+    <button type="submit">Create the review</button>
+</form>
+<!-- End of the Form to Create a Review -->
+
+<br>
+
+<!-- Display all the Reviews of the Book that we're seeing -->
+    {{#each book.reviews}}
+    <div>
+        <!-- Actually displaying the review -->
+        <p><span>By {{author.username}}</span>: {{content}}</p>
+        <!-- Deleting the Review -->
+        <form action="/review/delete/{{_id}}" method="post">
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+    {{/each}}
+
+<a href="/books">Back</a>
