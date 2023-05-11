@@ -1,0 +1,27 @@
+<h2>Create a Movie</h2>
+
+<div class="row">
+   <div class="col-md-6">
+        <form action="/movies/create" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>
+                    Title:
+                <input type="text" name="title" class="form-control" />
+               </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Description:
+                <textarea name="description" cols="30" rows="5" class="form-control"></textarea>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    Image:
+                    <input type="file" name="movie-cover-image" class="form-control-file"/>
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Movie</button>
+        </form>
+   </div>
+</div>
