@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+.rating{
+  padding: 0.70rem;
+  border-radius: 4px;
+} 
+
+.green {
+  background-color: green;
+}
+
+.red{
+  background-color: red;
+}
+
+.black{
+  background-color: black;
+}
