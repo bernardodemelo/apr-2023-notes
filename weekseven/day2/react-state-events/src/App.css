@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -39,4 +39,24 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.light{
+  background: rgba(255, 255, 255, 0.87);
+  color: #242424;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dark{
+  background: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
