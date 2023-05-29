@@ -1,17 +1,18 @@
-import { Link } from "react-router-dom";
- 
+import {Link} from 'react-router-dom';
+
 function Navbar() {
   return (
     <nav>
-      <Link to="/">
+    <Link to="/">
         <button>Home</button>
-      </Link>
- 
-      <Link to="/projects">
-        <button>Projects</button>
-      </Link>
+    </Link>
+
+    <Link to="/projects">
+    <button>Projects</button>
+    </Link>
+    
     </nav>
-  );
+  )
 }
- 
+
 export default Navbar;
