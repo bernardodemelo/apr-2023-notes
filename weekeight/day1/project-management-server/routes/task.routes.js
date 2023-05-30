@@ -12,12 +12,10 @@ router.post('/tasks', async(req,res)=>{
 
     try{
         // Create a New Task
-        let newTask = await Task.create({title, description, 
-        project: projectId});
+        let newTask = await Task.create({title, description, project: projectId});
 
         // Push a New Task to a Project
-        let response = await Project.findByIdAndUpdate(projectId,
-        {$push: {tasks: newTask._id}});
+        let response = await Project.findByIdAndUpdate(projectId, {$push: {tasks: newTask._id}});
 
         res.json(response);
     }
