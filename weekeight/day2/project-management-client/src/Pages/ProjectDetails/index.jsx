@@ -1,8 +1,7 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios'; 
 import {Link, useParams} from 'react-router-dom';
-
-const API_URL = 'http://localhost:5005';
+import projectsService from '../../Services/project.service';
 
 function ProjectDetailsPage() {
   // write state. By default it'll be null because we don't have
@@ -15,7 +14,7 @@ function ProjectDetailsPage() {
   // function to call axios to do a GET request 
   // to find a Project by the Id. 
   const getProject = () =>{
-    axios.get(`${API_URL}/api/projects/${projectId}`)
+    projectsService.getProject(projectId)
     .then((response)=>{
         const oneProject = response.data; 
         setProject(oneProject);

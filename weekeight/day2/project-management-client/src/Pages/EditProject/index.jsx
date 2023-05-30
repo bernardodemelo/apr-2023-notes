@@ -1,8 +1,6 @@
 import {useState, useEffect} from 'react';
 import {useParams, useNavigate} from 'react-router-dom';
-import axios from 'axios';
-
-const API_URL= 'http://localhost:5005';
+import projectsService from '../../Services/project.service';
 
 // useState => React Hook that stores data inside a React Component
 // aka store it into React Component' state. 
@@ -39,7 +37,7 @@ function EditProjectPage() {
 
     // Have a Side-Effect after initial rendering of component
     useEffect(()=>{
-        axios.get(`${API_URL}/api/projects/${projectId}`)
+        projectsService.getProject(projectId)
         .then((response)=>{
             const oneProject = response.data; 
             setTitle(oneProject.title);
@@ -61,8 +59,8 @@ function EditProjectPage() {
         const requestBody = {title, description};      
 
         // make a PUT request to update the project
-        axios.put(`${API_URL}/api/projects/${projectId}`, requestBody )
-             .then((response)=>{
+       projectsService.updateProject(projectId, requestBody)
+             .then(()=>{
                 navigate(`/projects/${projectId}`)
              })
              .catch((error)=>{
@@ -72,7 +70,7 @@ function EditProjectPage() {
 
     // Create a delete project function 
     const deleteProject = () => {
-        axios.delete(`${API_URL}/api/projects/${projectId}`)
+        projectsService.deleteProject(projectId)
         .then(()=>{
             navigate('/projects');
         })

@@ -9,6 +9,8 @@ import EditProjectPage from './Pages/EditProject';
 import SignUpPage from './Pages/SignUp';
 import LoginPage from './Pages/Login';
 
+import IsPrivate from './Components/IsPrivate';
+import IsAnon from './Components/IsAnon';
 
 function App() {
 
@@ -17,11 +19,11 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
-        <Route path="/projects" element={<ProjectsListPage/>}/>  
-        <Route path="/projects/:projectId" element={<ProjectDetailsPage/>}/>
-        <Route path="/projects/edit/:projectId" element={<EditProjectPage/>}/>
-        <Route path="/signup" element={<SignUpPage/>}/>
-        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/projects" element={<IsPrivate><ProjectsListPage/></IsPrivate>}/>  
+        <Route path="/projects/:projectId" element={<IsPrivate><ProjectDetailsPage/></IsPrivate>}/>
+        <Route path="/projects/edit/:projectId" element={<IsPrivate><EditProjectPage/></IsPrivate>}/>
+        <Route path="/signup" element={<IsAnon><SignUpPage/></IsAnon>}/>
+        <Route path="/login" element={<IsAnon><LoginPage/></IsAnon>}/>
       </Routes>
     </div>
   )

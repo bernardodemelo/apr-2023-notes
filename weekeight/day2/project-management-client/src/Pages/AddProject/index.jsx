@@ -1,7 +1,6 @@
 import {useState} from 'react';
-import axios from 'axios';
 
-const API_URL = 'http://localhost:5005';
+import projectsService from '../../Services/project.service';
 
 // STEPS:
 // 1) Create a Form; 
@@ -22,8 +21,8 @@ function AddProject(props) {
 
     const requestBody = {title, description};
 
-    axios.post(`${API_URL}/api/projects`, requestBody)
-    .then((response)=>{
+    projectsService.createProject(requestBody)
+    .then(()=>{
         setTitle("");
         setDescription("");
         props.refreshProjects();

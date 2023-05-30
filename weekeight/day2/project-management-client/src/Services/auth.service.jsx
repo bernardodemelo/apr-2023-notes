@@ -1,5 +1,7 @@
 import axios from 'axios';
  
+/* Axios Service that deals with Authentication */
+
 class AuthService {
   constructor() {
     // Create a new instance of axios with a custom configuration

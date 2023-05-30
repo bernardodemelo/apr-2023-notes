@@ -1,12 +1,9 @@
 import {useState, useEffect} from 'react'; 
-import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 import AddProject from '../AddProject';
+import projectsService from '../../Services/project.service';
 
-// Pass the API_URL
-
-const API_URL = "http://localhost:5005";
 
 // STEPS TO DO: 
 // 1) Get the Projects.
@@ -21,7 +18,7 @@ function ProjectsListPage(){
 
     // function that gets projects via axios
     const getAllProjects = () => {
-        axios.get(`${API_URL}/api/projects`)
+        projectsService.getAllProjects()
         .then((response)=> setProjects(response.data))
         .catch((error)=>console.log(error));
     }; 
